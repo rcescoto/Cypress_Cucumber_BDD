@@ -3,7 +3,7 @@ const USERNAME = "//*[@id='user_login']"
 const PASSWORD = "//*[@id='user_password']"
 const SUBMIT_BUTTON = "//*[@id='login_form']/div[2]/input"
 
-class LoginPage{
+class HomePage{
     static goToLogin() {
         cy.visit(URL)
     }
@@ -19,4 +19,4 @@ class LoginPage{
 }
     
 
-export default LoginPage
+export default HomePage

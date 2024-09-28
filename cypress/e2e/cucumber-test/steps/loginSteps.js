@@ -2,7 +2,7 @@ import {Given, When, Then} from 'cypress-cucumber-preprocessor/steps'
 import LoginPage from '../pageObjects/loginPage'
 
 
-Given("that the user goes to Application", () => {
+Given(" the user goes to Application", () => {
     LoginPage.goToLogin()
 })
 When("the user submits valid credentials" , () => {
@@ -15,7 +15,7 @@ Then("the user should see homepage",() => {
     cy.xpath("//*[@id='homeMenu']/div/strong").should('be.visible')
 })
 
-When("the user submits valid username {string} password {string}" , (username, password) => {
+When("the user submits invalid username {string} password {string}" , (username, password) => {
     LoginPage.inputPassword(username)
     LoginPage.inputPassword(password)
 })
